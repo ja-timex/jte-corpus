@@ -1,0 +1,45 @@
+site_name: jtc-copus documentation
+site_description: JTEコーパス ドキュメンテーション
+repo_url: https://github.com/ja-timex/jte-corpus
+edit_uri: blob/master/docs/docs/
+site_author: Yuki Okuda (yag_ays)
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - def_list
+  - attr_list
+  - admonition
+  - toc:
+      permalink: true
+theme:
+    name: material
+    language: ja
+    icon:
+        repo: fontawesome/brands/git-alt
+    logo: img/logo.png
+    favicon: img/favicon.ico
+    features:
+      - navigation.expand
+    palette:
+        - media: "(prefers-color-scheme: light)"     
+          scheme: default
+          primary: indigo
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)" 
+          scheme: slate
+          primary: indigo
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode     
+extra_css:
+  - stylesheets/extra.css 
+nav:
+    - "Home": 
+      - index.md        
+      - introduction.md
+    - "アノテーションガイドライン":
+      - annotation_overview.md
+    - "更新履歴":
+      - changelog.md
